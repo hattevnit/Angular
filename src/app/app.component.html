@@ -1,0 +1,7 @@
+<main>
+  <app-header [totalItem]="totalItemsParent"> </app-header>
+
+  <app-body [products]="products" (onRemoveProduct)="removeProduct($event)" (onChangeProductQuantity)= "changeQuanlityParent($event)"></app-body>
+
+  <app-footer [subTotal] = "subTotalMoney" ></app-footer>
+</main>
